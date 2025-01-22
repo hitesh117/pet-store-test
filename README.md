@@ -24,3 +24,7 @@ We can also run the tests using specific marker to save time.
 Available modules/marks: `pet`, `store`, `user`, `performance`, `e2e`
 
 Run the following command to execute specific modules: `pytest -v -m MODULE_NAME --html=report.html`
+
+---
+
+Most of the tests are parameterized and modularized. Easing the process of adding new cases and reusing the already existing capabilities.

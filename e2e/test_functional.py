@@ -21,6 +21,9 @@ class TestFunctional:
     @pytest.mark.parametrize("pet_name", ["pupo"])
     @pytest.mark.parametrize("pet_status", ["available"])
     def test_search_pet_by_name_and_category_and_place_order(self, headers, pet_category, pet_name, pet_status):
+        """
+        TC017: Buyer can check available pets named “pupo” with category name “pajaro” and place an order for a pet.
+        """
         # create pet data
         pet_data = get_pet_data(pet_name=pet_name, category=pet_category, status=pet_status)
 
@@ -49,6 +52,9 @@ class TestFunctional:
     @pytest.mark.parametrize("pet_status", ["available"])
     @pytest.mark.parametrize("pet_tag", ["Super Cute"])
     def test_update_pet_tag(self, headers, pet_category, pet_name, pet_status, pet_tag):
+        """
+        TC018: update the pet information of pets named “kurikuri” under category “Pomeranian” to add the tag “Super Cute”
+        """
         # add the dog
         pet_data = get_pet_data(pet_name=pet_name, category=pet_category, status=pet_status)
         pets.post_pet_request(pet_data)

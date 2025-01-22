@@ -1,19 +1,19 @@
-def get_pet_data():
+def get_pet_data(pet_name="doggie", pet_id=0, category="default", tag="default", status="available"):
     return {
-        "id": 0,
+        "id": pet_id,
         "category": {
             "id": 0,
-            "name": "string"
+            "name": category
         },
-        "name": "doggie",
+        "name": pet_name,
         "photoUrls": [
             "string"
         ],
         "tags": [
             {
                 "id": 0,
-                "name": "string"
+                "name": tag
             }
         ],
-        "status": "available"
+        "status": status
     }

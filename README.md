@@ -16,8 +16,11 @@ pytest -v --html=report.html
 
 ---
 
-We can also run the tests using specific markrs to save time.
+### NOTE: Minimum requirement scenarios are covered in ./e2e
 
-Available modules/marks: `pet`, `store`, `user`, `performance`.
+---
+We can also run the tests using specific marker to save time.
+
+Available modules/marks: `pet`, `store`, `user`, `performance`, `e2e`
 
 Run the following command to execute specific modules: `pytest -v -m MODULE_NAME --html=report.html`
